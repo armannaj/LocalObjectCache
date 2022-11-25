@@ -10,6 +10,9 @@
         <PackageLicenseUrl>https://github.com/armannaj/LocalObjectCache/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/armannaj/LocalObjectCache</RepositoryUrl>
         <RepositoryType>github</RepositoryType>
+        <Description>An object cache to store objects temporarily &amp; locally for .NET applications</Description>
+        <PackageTags>cache, cache-storage, local-cache</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
