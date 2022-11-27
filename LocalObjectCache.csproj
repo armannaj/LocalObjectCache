@@ -11,12 +11,17 @@
         <RepositoryUrl>https://github.com/armannaj/LocalObjectCache</RepositoryUrl>
         <RepositoryType>github</RepositoryType>
         <Description>An object cache to store objects temporarily &amp; locally for .NET applications</Description>
-        <PackageTags>cache, cache-storage, local-cache</PackageTags>
+        <PackageTags>cache, caching, cache-storage, local-cache</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="LiteDB" Version="5.0.12" />
+        <PackageReference Include="LiteDB" Version="5.0.12" />
+        <None Include="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
     </ItemGroup>
 
 </Project>

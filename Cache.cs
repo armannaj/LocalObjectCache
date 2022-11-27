@@ -6,13 +6,13 @@ using LiteDB;
 
 namespace LocalObjectCache;
 
-public class LocalObjectCache : IDisposable
+public class Cache : IDisposable
 {
     private readonly string _fileName;
     private readonly TimeSpan _cacheValidity;
     private readonly LiteDatabase _db;
 
-    public LocalObjectCache(string fileName, TimeSpan cacheValidity)
+    public Cache(string fileName, TimeSpan cacheValidity)
     {
         _fileName = fileName;
         _cacheValidity = cacheValidity;
@@ -34,7 +34,7 @@ public class LocalObjectCache : IDisposable
     /// <summary>
     /// local object cache with default settings
     /// </summary>
-    public static readonly LocalObjectCache Default = new("cache.db", TimeSpan.FromDays(1));
+    public static readonly Cache Default = new("cache.db", TimeSpan.FromDays(1));
    
     #endregion
     
