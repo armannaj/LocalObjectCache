@@ -1,4 +1,6 @@
 # LocalObjectCache
+[![NuGet](https://img.shields.io/nuget/v/LocalObjectCache.svg)](https://www.nuget.org/packages/LocalObjectCache)
+
 An object cache to store objects temporarily & locally for .NET applications.
 
 ## Required
@@ -11,12 +13,12 @@ An object cache to store objects temporarily & locally for .NET applications.
 Internally, it uses [LiteDB](https://github.com/mbdavid/litedb) to store objects in a local file.
 
 ## How to use
-For a quick start, you can use the static `LocalObjectCache.Default`. It creates a cache with the following default settings:
+For a quick start, you can use the static `Cache.Default`. It creates a cache with the following default settings:
 * Object validity timespan: _24hours from the time of object insertion_
 * DB filename: _cache.db_
 * DB file path: _local executing directory_
 
-Alternatively, you can instantiate `LocalObjectCache` and configure it the way you want it and use it.
+Alternatively, you can instantiate `Cache` and configure it the way you want it and use it.
 
 You can use `Index` attribute on the properties that you want to use as ID or you want to enforce uniqueness in the cache.
 
